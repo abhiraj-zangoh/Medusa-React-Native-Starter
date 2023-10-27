@@ -1,0 +1,4 @@
+const secret_key = "sk_test_51Nx4WASFaUcdRtbNrUqiSgoGN48zPFXQYPbzA6PpW6U2UmQe4iLgcwbyCAriOjlWA0hpscmcnwnEFUkTGnwHjAs200ym6m9ylb";
+const publishable_key = "pk_test_51Nx4WASFaUcdRtbNnImD3H2zA9L1swjxXlGuRlLfVB8dMR9UvqrPupImo042FCpUBh31dIRjeXOI85N5sjw11G3q00JRgKshOn";
+
+export { secret_key, publishable_key };
