@@ -40,7 +40,7 @@ export default function App() {
             <Scene key="ProductInfo" component={ProductInfo} hideNavBar />
             <Scene key="cart" component={Cart} hideNavBar />
             <Scene key="checkout" component={Checkout} hideNavBar />
-            <Scene key="login" initial component={Login} hideNavBar/>
+            {/* <Scene key="login"  component={Login} hideNavBar/> */}
             <Scene key="profile"  component={Profile} hideNavBar/>
             <Scene key="demo"  component={Demo} hideNavBar/>
 

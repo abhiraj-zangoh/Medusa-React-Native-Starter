@@ -35,14 +35,10 @@ export default function Products() {
       setProducts(res.data.products);
     });
   }
-  const intializeUserData = async () => {
-    const getuserData = await AsyncStorage.getItem("userData")
-    console.log(getuserData)
-    SetuserData(JSON.parse(getuserData))
-  }
+
   useEffect(() => {
     fetchProducts();
-    intializeUserData();
+ 
   }, []);
 async function temp()
 {
@@ -52,10 +48,14 @@ return currUserData
 }
   return (
     <View style={styles.container}>
+      
       <Text>{ userData.customer.first_name + " "+ userData.customer.last_name}</Text>
       {/* {getUserData()} */}
       <Header title="Medusa's Store" />
       <ScrollView>
+            
+<Button style={{width:130,marginBottom:12}} onPress={()=>Actions.profile()} title="sales channel"/>
+<Button style={{width:130,marginBottom:12}}  onPress={()=>Actions.demo()} title="Multiware house"/>
         <View style={styles.products}>
           {products.map((product) => (
             <TouchableOpacity

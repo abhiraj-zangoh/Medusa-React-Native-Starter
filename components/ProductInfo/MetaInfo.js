@@ -6,6 +6,7 @@ import Button from "../Button";
 import axios from "axios";
 import baseURL from "../../constants/url";
 import { useEffect } from "react";
+import token from "../../constants/Token";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 export default function MetaInfo({ product }) {
   const [activeSize, setActiveSize] = useState(0);
@@ -20,7 +21,7 @@ export default function MetaInfo({ product }) {
   
 
 
-  const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidXNyXzAxSEJRVjRKR1ZWUEhYMVI1MUhOUUZBQlZTIiwiZG9tYWluIjoiYWRtaW4iLCJpYXQiOjE2OTgzODA5NDAsImV4cCI6MTY5ODQ2NzM0MH0.grD-lSC8_1h_zx92i5dTNVD7dv3AQHABFyXrlUA6bys"; // Replace with your actual token
+
 
   function getAvailableQuantity(productId, variantId, stockLocationId) {
     let variantsData=null

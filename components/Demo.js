@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import Button from './Button';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Image } from 'react-native';
+import token from '../constants/Token';
 export default function Demo() {
   const [data, setData] = useState(null);
   const [productData, setProductData] = useState([]);
@@ -10,7 +11,6 @@ export default function Demo() {
   const [filteredProductIds, setFilteredProductIds] = useState([]);
   const [inventoryData, setInventoryData] = useState([]);
 
-  const token = "eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidXNyXzAxSEJRVjRKR1ZWUEhYMVI1MUhOUUZBQlZTIiwiZG9tYWluIjoiYWRtaW4iLCJpYXQiOjE2OTgzODA5NDAsImV4cCI6MTY5ODQ2NzM0MH0.grD-lSC8_1h_zx92i5dTNVD7dv3AQHABFyXrlUA6bys"; // Replace with your actual token
   
   const fetchData = async () => {
     try {
@@ -88,6 +88,7 @@ useEffect(()=>{
 },[currSlocID])
   return (
     <View>
+      
       {data && (
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginTop: 29 }}>
           {data.map(location => (

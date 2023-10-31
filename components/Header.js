@@ -3,9 +3,11 @@ import React from "react";
 import { widthToDp } from "rn-responsive-screen";
 import { Actions } from "react-native-router-flux";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import Button from "./Button";
 TouchableOpacity
 export default function Header({ title }) {
   return (
+    <View>
     <View style={styles.container}>
   
       <Image
@@ -14,9 +16,12 @@ export default function Header({ title }) {
         }}
         style={styles.logo}
       />
+      
       <Text style={styles.title}>{title}</Text>
-<Text onPress={()=>Actions.profile()}>discounts</Text>
-<Text onPress={()=>Actions.demo()}>demo</Text>
+      </View>
+
+
+
     </View>
   );
 }

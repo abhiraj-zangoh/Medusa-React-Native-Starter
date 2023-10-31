@@ -23,8 +23,8 @@ const loginStateChange = async (data) => {
 }
 const Login = () => {
 
-  const [username, setUsername] = useState('abhirajbhosle75@gmail.com');
-  const [password, setPassword] = useState('12345');
+  const [username, setUsername] = useState('email_here');
+  const [password, setPassword] = useState('password');
 
   const handleLogin = () => {
     console.log('Username:', username);
